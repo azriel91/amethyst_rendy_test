@@ -15,9 +15,9 @@ mod tests {
 
                 AmethystApplication::blank()
                     .with_bundle(TransformBundle::new())
-                    // .with_bundle(WindowBundle::from_test_config())
                     .with_bundle(RenderEmptyBundle::new())
-                    .run()
+                    .run() // segfaults
+                           // .run_isolated() // doesn't segfault
             }
         };
     }
