@@ -5,8 +5,9 @@ authors = ["Azriel Hoh <mail@azriel.im>"]
 edition = "2018"
 
 [dependencies]
-amethyst = { git = "https://github.com/azriel91/amethyst.git", branch = "feature/amethyst-test-rendy", features = ["vulkan"] }
+amethyst = { git = "https://github.com/azriel91/amethyst.git", branch = "feature/amethyst-test-rendy", features = ["test-support", "vulkan"] }
 amethyst_test = { git = "https://github.com/azriel91/amethyst.git", branch = "feature/amethyst-test-rendy" }
 
 [patch.crates-io]
-rendy = { git = "https://github.com/amethyst/rendy.git" }
+rendy = { git = "https://github.com/azriel91/rendy.git", branch = "dont-double-panic" }
+
